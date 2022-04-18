@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bebbabcc-e26a-4883-bea9-d9a401574904" name="Changes" comment="chore(global): prettify and organize the project">
-      <change afterPath="$PROJECT_DIR$/assets/black-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/green-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/helmet-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/vercel.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/white-logo.png" afterDir="false" />
+    <list default="true" id="bebbabcc-e26a-4883-bea9-d9a401574904" name="Changes" comment="style(global)!: add favicon and images">
+      <change afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vercel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +36,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="27uvuQThSIlF8nhBFQ9hDITyXrK" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -85,7 +83,7 @@
       <workItem from="1650183010783" duration="941000" />
       <workItem from="1650190763366" duration="1056000" />
       <workItem from="1650191832004" duration="107000" />
-      <workItem from="1650253650709" duration="1891000" />
+      <workItem from="1650253650709" duration="2256000" />
     </task>
     <task id="LOCAL-00001" summary="feat(global)!: config prettier and themes">
       <created>1650190728751</created>
@@ -115,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650254067757</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="style(global)!: add favicon and images">
+      <created>1650255576486</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1650255576486</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,7 +143,8 @@
     <MESSAGE value="feat(global)!: jetbrains configuration" />
     <MESSAGE value="fix(global)!: fix package json issues with packages" />
     <MESSAGE value="chore(global): prettify and organize the project" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore(global): prettify and organize the project" />
+    <MESSAGE value="style(global)!: add favicon and images" />
+    <option name="LAST_COMMIT_MESSAGE" value="style(global)!: add favicon and images" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
