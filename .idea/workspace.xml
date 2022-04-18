@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bebbabcc-e26a-4883-bea9-d9a401574904" name="Changes" comment="fix(global)!: fix package json issues with packages">
-      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.commitlintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.commitlintrc.json" afterDir="false" />
+    <list default="true" id="bebbabcc-e26a-4883-bea9-d9a401574904" name="Changes" comment="chore(global): prettify and organize the project">
+      <change afterPath="$PROJECT_DIR$/assets/black-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/green-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/helmet-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/vercel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/white-logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.lintstagedrc" beforeDir="false" afterPath="$PROJECT_DIR$/.lintstagedrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/api/hello.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/hello.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vercel.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/vercel.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/Home.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/Home.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vercel.svg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +85,7 @@
       <workItem from="1650183010783" duration="941000" />
       <workItem from="1650190763366" duration="1056000" />
       <workItem from="1650191832004" duration="107000" />
-      <workItem from="1650253650709" duration="403000" />
+      <workItem from="1650253650709" duration="1891000" />
     </task>
     <task id="LOCAL-00001" summary="feat(global)!: config prettier and themes">
       <created>1650190728751</created>
@@ -110,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650191482924</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="chore(global): prettify and organize the project">
+      <created>1650254067757</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1650254067757</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,7 +137,8 @@
     <MESSAGE value="feat(global)!: config prettier and themes" />
     <MESSAGE value="feat(global)!: jetbrains configuration" />
     <MESSAGE value="fix(global)!: fix package json issues with packages" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix(global)!: fix package json issues with packages" />
+    <MESSAGE value="chore(global): prettify and organize the project" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore(global): prettify and organize the project" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
