@@ -1,8 +1,8 @@
 import React from 'react';
 import { CacheProvider } from '@emotion/react';
-import { CssBaseline, ThemeProvider } from '@mui/material';
+import { CssBaseline } from '@mui/material';
 import createEmotionCache from '../utility/createEmotionCache';
-import lightTheme from '../styles/theme/lightTheme';
+import { MyThemeContextProvider } from '../store/myThemeContext';
 import Layout from '../components/layout';
 import '../styles/globals.css';
 
@@ -13,12 +13,12 @@ const MyApp = (props: any) => {
 
   return (
     <CacheProvider value={emotionCache}>
-      <ThemeProvider theme={lightTheme}>
+      <MyThemeContextProvider>
         <CssBaseline />
         <Layout>
           <Component {...pageProps} />
         </Layout>
-      </ThemeProvider>
+      </MyThemeContextProvider>
     </CacheProvider>
   );
 };
