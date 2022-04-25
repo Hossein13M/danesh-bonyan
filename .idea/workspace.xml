@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bebbabcc-e26a-4883-bea9-d9a401574904" name="Changes" comment="fix(tailwind)!: fix tailwind configuration based on project folder hierarchy changes">
+    <list default="true" id="bebbabcc-e26a-4883-bea9-d9a401574904" name="Changes" comment="feat(global)!: strict rules for type safety">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/api/hello.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +47,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hossein13m.github.io" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
@@ -87,7 +83,8 @@
       <workItem from="1650190763366" duration="1056000" />
       <workItem from="1650191832004" duration="107000" />
       <workItem from="1650253650709" duration="2256000" />
-      <workItem from="1650771152184" duration="1517000" />
+      <workItem from="1650771152184" duration="2019000" />
+      <workItem from="1650870160316" duration="5805000" />
     </task>
     <task id="LOCAL-00001" summary="feat(global)!: config prettier and themes">
       <created>1650190728751</created>
@@ -131,7 +128,42 @@
       <option name="project" value="LOCAL" />
       <updated>1650261768269</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="chore(navbar): change logo size and remove extra codes">
+      <created>1650792331740</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1650792331740</updated>
+    </task>
+    <task id="LOCAL-00008" summary="chore(header): enhance imports in header">
+      <created>1650792502013</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1650792502013</updated>
+    </task>
+    <task id="LOCAL-00009" summary="chore(index): remove extra imports in index file">
+      <created>1650792527334</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1650792527335</updated>
+    </task>
+    <task id="LOCAL-00010" summary="chore(global): remove useless api folder and apply some changes to workspace webstorm config file">
+      <created>1650792564741</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1650792564741</updated>
+    </task>
+    <task id="LOCAL-00011" summary="feat(global)!: strict rules for type safety">
+      <created>1650881403875</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1650881403875</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,7 +188,12 @@
     <MESSAGE value="chore(global): prettify and organize the project" />
     <MESSAGE value="style(global)!: add favicon and images" />
     <MESSAGE value="chore(global)!: change folder structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore(global)!: change folder structure" />
+    <MESSAGE value="chore(navbar): change logo size and remove extra codes" />
+    <MESSAGE value="chore(header): enhance imports in header" />
+    <MESSAGE value="chore(index): remove extra imports in index file" />
+    <MESSAGE value="chore(global): remove useless api folder and apply some changes to workspace webstorm config file" />
+    <MESSAGE value="feat(global)!: strict rules for type safety" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(global)!: strict rules for type safety" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

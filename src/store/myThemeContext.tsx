@@ -5,7 +5,11 @@ const MyThemeContext = createContext({
   toggleThemeHandler: () => {},
 });
 
-export function MyThemeContextProvider(props: any): ReactElement {
+interface ThemePropsInterface {
+  children?: JSX.Element | JSX.Element[];
+}
+
+export function MyThemeContextProvider(props: ThemePropsInterface): ReactElement {
   const [isDarkTheme, setIsDarkTheme] = useState(true);
   useEffect(() => initialThemeHandler(), []);
 
