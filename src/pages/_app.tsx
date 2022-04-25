@@ -8,7 +8,7 @@ import '../styles/globals.css';
 
 const clientSideEmotionCache = createEmotionCache();
 
-export interface AppPropsInterface {
+interface AppPropsInterface {
   Component?: any;
   emotionCache?: EmotionCache;
   children?: JSX.Element | JSX.Element[];
