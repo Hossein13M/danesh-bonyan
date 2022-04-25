@@ -1,5 +1,5 @@
 import React from 'react';
-import { CacheProvider } from '@emotion/react';
+import { CacheProvider, EmotionCache } from '@emotion/react';
 import { CssBaseline } from '@mui/material';
 import createEmotionCache from '../utility/createEmotionCache';
 import { MyThemeContextProvider } from '../store/myThemeContext';
@@ -8,7 +8,14 @@ import '../styles/globals.css';
 
 const clientSideEmotionCache = createEmotionCache();
 
-const MyApp = (props: any) => {
+export interface AppPropsInterface {
+  Component?: any;
+  emotionCache?: EmotionCache;
+  children?: JSX.Element | JSX.Element[];
+  pageProps?: JSX.Element;
+}
+
+const MyApp = (props: AppPropsInterface) => {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
 
   return (
