@@ -1,67 +1,39 @@
-import React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Zoom from '@mui/material/Zoom';
-import useScrollTrigger from '@mui/material/useScrollTrigger';
-import { CssBaseline, Fab, IconButton, Typography } from '@mui/material';
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+import { useContext } from 'react';
+import Image from 'next/image';
+import { IconButton } from '@mui/material';
+import Button from '@mui/material/Button';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
-import GitHubIcon from '@mui/icons-material/GitHub';
+import MyThemeContext from '../store/myThemeContext';
 
-function ScrollTop(props: any) {
-  const { children, window } = props;
-  const trigger = useScrollTrigger({
-    target: window ? window() : undefined,
-    disableHysteresis: true,
-    threshold: 100,
-  });
+export default function Header() {
+  const themeCtx = useContext(MyThemeContext);
 
-  const handleClick = (event: React.MouseEvent<HTMLDivElement>) => {
-    const anchor = ((event.target as HTMLDivElement).ownerDocument || document).querySelector('#back-to-top-anchor');
+  function toggleThemeHandler(): void {
+    themeCtx.toggleThemeHandler();
+  }
 
-    if (anchor) {
-      anchor.scrollIntoView({
-        behavior: 'smooth',
-        block: 'center',
-      });
-    }
-  };
   return (
-    <Zoom in={trigger}>
-      <Box onClick={handleClick} role="presentation" sx={{ position: 'fixed', bottom: 16, right: 16 }}>
-        {children}
-      </Box>
-    </Zoom>
-  );
-}
-
-export default function HeaderAppBar(props: any) {
-  return (
-    <React.Fragment>
-      <CssBaseline />
-      <AppBar>
-        <Toolbar className={'py-2 bg-sky-900 text-center'}>
-          <IconButton aria-label="delete" size="large" className={'text-bold text-2xl text-white'}>
-            <GitHubIcon fontSize="inherit" className={'text-4xl'} />
+    <>
+      <div className="flex justify-between px-20 items-center backdrop-blur-lg fixed w-full py-2">
+        <div>
+          <IconButton size="large" className={'text-bold text-2xl text-white'} onClick={toggleThemeHandler}>
+            <Brightness4Icon fontSize="inherit" className={'text-4xl dark:text-white text-black'} />
           </IconButton>
+        </div>
 
-          <Typography variant="h6" component="h1" sx={{ flexGrow: 1 }}>
-            فهرست شرکت‌های دانش‌بنیان
-          </Typography>
+        <div className="flex items-center justify-center">
+          <Button className="text-black dark:text-white" size="large">
+            درباره
+          </Button>
 
-          <IconButton aria-label="delete" size="large" className={'text-bold text-2xl text-white'}>
-            <Brightness4Icon fontSize="inherit" className={'text-4xl'} />
-          </IconButton>
-        </Toolbar>
-      </AppBar>
-      <Toolbar id="back-to-top-anchor" />
+          <Button disableRipple disableFocusRipple className="text-black dark:text-white" size="large">
+            گیت‌هاب
+          </Button>
 
-      <ScrollTop {...props}>
-        <Fab color="secondary" size="small" aria-label="scroll back to top">
-          <KeyboardArrowUpIcon />
-        </Fab>
-      </ScrollTop>
-    </React.Fragment>
+          <h1 className="text-xl font-black dark:text-white mx-2"> فهرست شرکت‌های دانش‌بنیان</h1>
+          <Image src="/assets/logo.png" alt="Logo" width={30} height={30} />
+        </div>
+      </div>
+    </>
   );
 }
