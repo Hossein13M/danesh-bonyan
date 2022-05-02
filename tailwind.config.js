@@ -1,3 +1,15 @@
+const { colors: defaultColors } = require('tailwindcss/defaultTheme');
+
+const colors = {
+  ...defaultColors,
+  ...{
+    'custom-slate': {
+      100: '#374151',
+      200: '#1F2937',
+    },
+  },
+};
+
 module.exports = {
   prefix: '',
   important: true,
@@ -5,6 +17,7 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      colors: colors,
       screen: {
         xs: { min: '320px', max: '640px' },
         sm: { min: '640px', max: '767px' },

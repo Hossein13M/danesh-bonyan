@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bebbabcc-e26a-4883-bea9-d9a401574904" name="Changes" comment="feat(global)!: strict rules for type safety">
+    <list default="true" id="bebbabcc-e26a-4883-bea9-d9a401574904" name="Changes" comment="feat(layout): enhance layout grid">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_app.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -47,7 +55,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../nextjs-tailwind-dark-theme" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
@@ -84,7 +93,8 @@
       <workItem from="1650191832004" duration="107000" />
       <workItem from="1650253650709" duration="2256000" />
       <workItem from="1650771152184" duration="2019000" />
-      <workItem from="1650870160316" duration="5805000" />
+      <workItem from="1650870160316" duration="10420000" />
+      <workItem from="1651388430207" duration="6153000" />
     </task>
     <task id="LOCAL-00001" summary="feat(global)!: config prettier and themes">
       <created>1650190728751</created>
@@ -163,7 +173,49 @@
       <option name="project" value="LOCAL" />
       <updated>1650881403875</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="fix(app): remove useless export">
+      <created>1650881424251</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1650881424251</updated>
+    </task>
+    <task id="LOCAL-00013" summary="chore(idea): update workspace xml file">
+      <created>1650881437063</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1650881437063</updated>
+    </task>
+    <task id="LOCAL-00014" summary="feat(tailwind): add custom color to tailwind">
+      <created>1651401056411</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1651401056411</updated>
+    </task>
+    <task id="LOCAL-00015" summary="feat(layout): implement footer">
+      <created>1651401084570</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1651401084570</updated>
+    </task>
+    <task id="LOCAL-00016" summary="feat(layout): change navbar to header and enhance its ui">
+      <created>1651401142476</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1651401142476</updated>
+    </task>
+    <task id="LOCAL-00017" summary="feat(layout): enhance layout grid">
+      <created>1651401159042</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1651401159042</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,7 +245,13 @@
     <MESSAGE value="chore(index): remove extra imports in index file" />
     <MESSAGE value="chore(global): remove useless api folder and apply some changes to workspace webstorm config file" />
     <MESSAGE value="feat(global)!: strict rules for type safety" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(global)!: strict rules for type safety" />
+    <MESSAGE value="fix(app): remove useless export" />
+    <MESSAGE value="chore(idea): update workspace xml file" />
+    <MESSAGE value="feat(tailwind): add custom color to tailwind" />
+    <MESSAGE value="feat(layout): implement footer" />
+    <MESSAGE value="feat(layout): change navbar to header and enhance its ui" />
+    <MESSAGE value="feat(layout): enhance layout grid" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(layout): enhance layout grid" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
