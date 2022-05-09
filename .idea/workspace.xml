@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bebbabcc-e26a-4883-bea9-d9a401574904" name="Changes" comment="chore(idea): jetbrains idea configuration files">
+    <list default="true" id="bebbabcc-e26a-4883-bea9-d9a401574904" name="Changes" comment="chore(idea): jetbrains idea configuration">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/globals.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +99,7 @@
       <workItem from="1650771152184" duration="2019000" />
       <workItem from="1650870160316" duration="10420000" />
       <workItem from="1651388430207" duration="6525000" />
-      <workItem from="1651985482234" duration="27685000" />
+      <workItem from="1651985482234" duration="28080000" />
     </task>
     <task id="LOCAL-00001" summary="feat(global)!: config prettier and themes">
       <created>1650190728751</created>
@@ -325,7 +325,28 @@
       <option name="project" value="LOCAL" />
       <updated>1652094794039</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="style(header): enhance header styles">
+      <created>1652096045313</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1652096045313</updated>
+    </task>
+    <task id="LOCAL-00034" summary="style(layout): enhance layout styles">
+      <created>1652096055982</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1652096055982</updated>
+    </task>
+    <task id="LOCAL-00035" summary="chore(idea): jetbrains idea configuration">
+      <created>1652096067675</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1652096067675</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,9 +365,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="chore(header): enhance imports in header" />
-    <MESSAGE value="chore(index): remove extra imports in index file" />
-    <MESSAGE value="chore(global): remove useless api folder and apply some changes to workspace webstorm config file" />
     <MESSAGE value="feat(global)!: strict rules for type safety" />
     <MESSAGE value="fix(app): remove useless export" />
     <MESSAGE value="chore(idea): update workspace xml file" />
@@ -369,7 +387,10 @@
     <MESSAGE value="style(header)!: enhance header for mobile version" />
     <MESSAGE value="feat(layout)!: include sidebar inside layout" />
     <MESSAGE value="chore(idea): jetbrains idea configuration files" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore(idea): jetbrains idea configuration files" />
+    <MESSAGE value="style(header): enhance header styles" />
+    <MESSAGE value="style(layout): enhance layout styles" />
+    <MESSAGE value="chore(idea): jetbrains idea configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore(idea): jetbrains idea configuration" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
