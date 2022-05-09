@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bebbabcc-e26a-4883-bea9-d9a401574904" name="Changes" comment="style(sidebar)!: implement sidebar css">
-      <change afterPath="$PROJECT_DIR$/src/components/hamburgerbar.tsx" afterDir="false" />
+    <list default="true" id="bebbabcc-e26a-4883-bea9-d9a401574904" name="Changes" comment="chore(idea): jetbrains idea configuration files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.tsx" afterDir="false" />
@@ -100,7 +99,7 @@
       <workItem from="1650771152184" duration="2019000" />
       <workItem from="1650870160316" duration="10420000" />
       <workItem from="1651388430207" duration="6525000" />
-      <workItem from="1651985482234" duration="26670000" />
+      <workItem from="1651985482234" duration="27685000" />
     </task>
     <task id="LOCAL-00001" summary="feat(global)!: config prettier and themes">
       <created>1650190728751</created>
@@ -305,7 +304,28 @@
       <option name="project" value="LOCAL" />
       <updated>1652094715277</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="style(header)!: enhance header for mobile version">
+      <created>1652094747006</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1652094747006</updated>
+    </task>
+    <task id="LOCAL-00031" summary="feat(layout)!: include sidebar inside layout">
+      <created>1652094777792</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1652094777792</updated>
+    </task>
+    <task id="LOCAL-00032" summary="chore(idea): jetbrains idea configuration files">
+      <created>1652094794039</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1652094794039</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,9 +344,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="style(global)!: add favicon and images" />
-    <MESSAGE value="chore(global)!: change folder structure" />
-    <MESSAGE value="chore(navbar): change logo size and remove extra codes" />
     <MESSAGE value="chore(header): enhance imports in header" />
     <MESSAGE value="chore(index): remove extra imports in index file" />
     <MESSAGE value="chore(global): remove useless api folder and apply some changes to workspace webstorm config file" />
@@ -349,7 +366,10 @@
     <MESSAGE value="chore(assets): add custom menu image" />
     <MESSAGE value="feat(sidebar)!: implement sidebar component" />
     <MESSAGE value="style(sidebar)!: implement sidebar css" />
-    <option name="LAST_COMMIT_MESSAGE" value="style(sidebar)!: implement sidebar css" />
+    <MESSAGE value="style(header)!: enhance header for mobile version" />
+    <MESSAGE value="feat(layout)!: include sidebar inside layout" />
+    <MESSAGE value="chore(idea): jetbrains idea configuration files" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore(idea): jetbrains idea configuration files" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
