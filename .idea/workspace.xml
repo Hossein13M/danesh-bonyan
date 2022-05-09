@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bebbabcc-e26a-4883-bea9-d9a401574904" name="Changes" comment="style(layout): change layout background color">
-      <change afterPath="$PROJECT_DIR$/src/components/about/About.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/about/about-card.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/about/about.const.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/about.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+    <list default="true" id="bebbabcc-e26a-4883-bea9-d9a401574904" name="Changes" comment="feat(aboutPage)!: implement about page">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +98,7 @@
       <workItem from="1650771152184" duration="2019000" />
       <workItem from="1650870160316" duration="10420000" />
       <workItem from="1651388430207" duration="6525000" />
-      <workItem from="1651985482234" duration="16135000" />
+      <workItem from="1651985482234" duration="18622000" />
     </task>
     <task id="LOCAL-00001" summary="feat(global)!: config prettier and themes">
       <created>1650190728751</created>
@@ -257,7 +254,21 @@
       <option name="project" value="LOCAL" />
       <updated>1652003019849</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="feat(aboutCard): implement general card for about me section">
+      <created>1652003083205</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1652003083205</updated>
+    </task>
+    <task id="LOCAL-00024" summary="feat(aboutPage)!: implement about page">
+      <created>1652003104675</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1652003104675</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,7 +309,9 @@
     <MESSAGE value="chore(assets): add assets for portfolio and profile image" />
     <MESSAGE value="chore(assets): update packages" />
     <MESSAGE value="style(layout): change layout background color" />
-    <option name="LAST_COMMIT_MESSAGE" value="style(layout): change layout background color" />
+    <MESSAGE value="feat(aboutCard): implement general card for about me section" />
+    <MESSAGE value="feat(aboutPage)!: implement about page" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(aboutPage)!: implement about page" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
