@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .whiten-filter {
+    filter: brightness(0) invert(1);
+  }
+}
+
 html,
 body {
   padding: 0;

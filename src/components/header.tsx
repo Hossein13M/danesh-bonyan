@@ -16,14 +16,14 @@ export default function Header() {
 
   return (
     <>
-      <div className="flex justify-between md:px-20 items-center backdrop-blur-lg fixed w-full py-2">
+      <div className="flex justify-between md:px-20 items-center backdrop-blur-lg fixed w-full py-2 pt-10">
         <div>
           <IconButton size="large" className={'hidden md:flex text-bold text-2xl text-white'} onClick={toggleThemeHandler}>
             <Brightness4Icon fontSize="inherit" className={'text-4xl dark:text-white text-black'} />
           </IconButton>
         </div>
 
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center w-full md:w-max">
           <Button className="hidden md:flex text-black dark:text-white" size="large" onClick={() => router.push('/about')}>
             درباره
           </Button>
@@ -35,8 +35,8 @@ export default function Header() {
           </a>
 
           <button className="flex" onClick={() => router.push('/')}>
-            <h1 className="text-xl font-black dark:text-white mx-2"> فهرست شرکت‌های دانش‌بنیان</h1>
-            <Image src="/assets/logo.png" alt="Logo" width={30} height={30} className="hidden md:flex" />
+            <h1 className="sm:text-xl font-black dark:text-white mx-2"> فهرست شرکت‌های دانش‌بنیان</h1>
+            <Image src="/assets/logo.png" alt="Logo" width={30} height={30} className="hidden md:flex dark:whiten-filter" />
           </button>
         </div>
       </div>
