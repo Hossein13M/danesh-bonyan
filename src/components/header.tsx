@@ -36,7 +36,7 @@ export default function Header() {
 
           <button className="flex" onClick={() => router.push('/')}>
             <h1 className="sm:text-xl font-black dark:text-white mx-2"> فهرست شرکت‌های دانش‌بنیان</h1>
-            <Image src="/assets/logo.png" alt="Logo" width={30} height={30} className="hidden md:flex" />
+            <Image src="/assets/logo.png" alt="Logo" width={30} height={30} className="hidden md:flex dark:whiten-filter" />
           </button>
         </div>
       </div>
