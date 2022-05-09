@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bebbabcc-e26a-4883-bea9-d9a401574904" name="Changes" comment="feat(aboutPage)!: implement about page">
+    <list default="true" id="bebbabcc-e26a-4883-bea9-d9a401574904" name="Changes" comment="chore(git): enhance git ignore configuration">
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/menu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/menu2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/hamburgerbar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/sidebar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +107,7 @@
       <workItem from="1650771152184" duration="2019000" />
       <workItem from="1650870160316" duration="10420000" />
       <workItem from="1651388430207" duration="6525000" />
-      <workItem from="1651985482234" duration="18622000" />
+      <workItem from="1651985482234" duration="26324000" />
     </task>
     <task id="LOCAL-00001" summary="feat(global)!: config prettier and themes">
       <created>1650190728751</created>
@@ -268,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652003104675</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="chore(git): enhance git ignore configuration">
+      <created>1652069777699</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1652069777699</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,7 +327,8 @@
     <MESSAGE value="style(layout): change layout background color" />
     <MESSAGE value="feat(aboutCard): implement general card for about me section" />
     <MESSAGE value="feat(aboutPage)!: implement about page" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(aboutPage)!: implement about page" />
+    <MESSAGE value="chore(git): enhance git ignore configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore(git): enhance git ignore configuration" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
