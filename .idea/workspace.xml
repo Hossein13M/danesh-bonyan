@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bebbabcc-e26a-4883-bea9-d9a401574904" name="Changes" comment="chore(git): enhance git ignore configuration">
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/menu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/menu2.png" afterDir="false" />
+    <list default="true" id="bebbabcc-e26a-4883-bea9-d9a401574904" name="Changes" comment="style(sidebar)!: implement sidebar css">
       <change afterPath="$PROJECT_DIR$/src/components/hamburgerbar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/sidebar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +100,7 @@
       <workItem from="1650771152184" duration="2019000" />
       <workItem from="1650870160316" duration="10420000" />
       <workItem from="1651388430207" duration="6525000" />
-      <workItem from="1651985482234" duration="26324000" />
+      <workItem from="1651985482234" duration="26670000" />
     </task>
     <task id="LOCAL-00001" summary="feat(global)!: config prettier and themes">
       <created>1650190728751</created>
@@ -284,7 +277,35 @@
       <option name="project" value="LOCAL" />
       <updated>1652069777699</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="feat(package): install react burger package">
+      <created>1652094424547</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1652094424547</updated>
+    </task>
+    <task id="LOCAL-00027" summary="chore(assets): add custom menu image">
+      <created>1652094462160</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1652094462160</updated>
+    </task>
+    <task id="LOCAL-00028" summary="feat(sidebar)!: implement sidebar component">
+      <created>1652094705810</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1652094705810</updated>
+    </task>
+    <task id="LOCAL-00029" summary="style(sidebar)!: implement sidebar css">
+      <created>1652094715277</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1652094715277</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,10 +324,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat(global)!: config prettier and themes" />
-    <MESSAGE value="feat(global)!: jetbrains configuration" />
-    <MESSAGE value="fix(global)!: fix package json issues with packages" />
-    <MESSAGE value="chore(global): prettify and organize the project" />
     <MESSAGE value="style(global)!: add favicon and images" />
     <MESSAGE value="chore(global)!: change folder structure" />
     <MESSAGE value="chore(navbar): change logo size and remove extra codes" />
@@ -328,7 +345,11 @@
     <MESSAGE value="feat(aboutCard): implement general card for about me section" />
     <MESSAGE value="feat(aboutPage)!: implement about page" />
     <MESSAGE value="chore(git): enhance git ignore configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore(git): enhance git ignore configuration" />
+    <MESSAGE value="feat(package): install react burger package" />
+    <MESSAGE value="chore(assets): add custom menu image" />
+    <MESSAGE value="feat(sidebar)!: implement sidebar component" />
+    <MESSAGE value="style(sidebar)!: implement sidebar css" />
+    <option name="LAST_COMMIT_MESSAGE" value="style(sidebar)!: implement sidebar css" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
