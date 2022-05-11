@@ -10,7 +10,6 @@ export function GeneralInput(props: any) {
         className="bg-slate-100 rounded-full  flex items-center m-auto p-auto"
         label="Search"
         InputProps={{
-          disableUnderline: true,
           endAdornment: (
             <InputAdornment position="end">
               <IconButton edge="end" className="bg-sky-700 text-white">
