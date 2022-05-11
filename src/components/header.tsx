@@ -16,7 +16,7 @@ export default function Header() {
 
   return (
     <>
-      <div className="flex justify-between md:px-20 items-center backdrop-blur-xl fixed w-full py-2 pt-10">
+      <div className="flex justify-between md:px-20 items-center backdrop-blur-xl w-full py-2">
         <div>
           <IconButton size="large" className={'hidden md:flex text-bold text-2xl text-white'} onClick={toggleThemeHandler}>
             <Brightness4Icon fontSize="inherit" className={'text-4xl dark:text-white text-black'} />

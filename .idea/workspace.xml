@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bebbabcc-e26a-4883-bea9-d9a401574904" name="Changes" comment="chore(idea): jetbrains idea configuration">
+    <list default="true" id="f556f21e-237a-481e-a075-142e5be35c4c" name="Changes" comment="feat(index): jetbrains idea configuration files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/general-input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/general-input.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,8 +13,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="TypeScript File" />
+        <option value="CSS File" />
         <option value="TypeScript JSX File" />
       </list>
     </option>
@@ -346,7 +345,56 @@
       <option name="project" value="LOCAL" />
       <updated>1652096067675</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="chore(global): remove extra code">
+      <created>1652269319123</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1652269319123</updated>
+    </task>
+    <task id="LOCAL-00037" summary="feat(layout): enhance layout semantic html and UI">
+      <created>1652269351812</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1652269351812</updated>
+    </task>
+    <task id="LOCAL-00038" summary="style(header): enhance header for sticky mode and proper content view">
+      <created>1652269383971</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1652269383971</updated>
+    </task>
+    <task id="LOCAL-00039" summary="feat(generalTable)!: implement general table base component">
+      <created>1652269413423</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1652269413423</updated>
+    </task>
+    <task id="LOCAL-00040" summary="feat(generalInput)!: implement general input base component">
+      <created>1652269427955</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1652269427955</updated>
+    </task>
+    <task id="LOCAL-00041" summary="feat(index): add table and input component in the main page">
+      <created>1652269448816</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1652269448816</updated>
+    </task>
+    <task id="LOCAL-00042" summary="feat(index): jetbrains idea configuration files">
+      <created>1652269460811</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1652269460811</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,13 +413,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feat(global)!: strict rules for type safety" />
-    <MESSAGE value="fix(app): remove useless export" />
-    <MESSAGE value="chore(idea): update workspace xml file" />
-    <MESSAGE value="feat(tailwind): add custom color to tailwind" />
-    <MESSAGE value="feat(layout): implement footer" />
-    <MESSAGE value="feat(layout): change navbar to header and enhance its ui" />
-    <MESSAGE value="feat(layout): enhance layout grid" />
     <MESSAGE value="chore(global): idea config and apply some changes to git ignore" />
     <MESSAGE value="chore(header): implement header link" />
     <MESSAGE value="chore(assets): add assets for portfolio and profile image" />
@@ -390,7 +431,14 @@
     <MESSAGE value="style(header): enhance header styles" />
     <MESSAGE value="style(layout): enhance layout styles" />
     <MESSAGE value="chore(idea): jetbrains idea configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore(idea): jetbrains idea configuration" />
+    <MESSAGE value="chore(global): remove extra code" />
+    <MESSAGE value="feat(layout): enhance layout semantic html and UI" />
+    <MESSAGE value="style(header): enhance header for sticky mode and proper content view" />
+    <MESSAGE value="feat(generalTable)!: implement general table base component" />
+    <MESSAGE value="feat(generalInput)!: implement general input base component" />
+    <MESSAGE value="feat(index): add table and input component in the main page" />
+    <MESSAGE value="feat(index): jetbrains idea configuration files" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(index): jetbrains idea configuration files" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
