@@ -11,7 +11,7 @@ export function GeneralInput(props: any) {
       <TextField
         {...props}
         variant="filled"
-        className="bg-slate-100 dark:bg-slate-200 rounded-full"
+        className="bg-slate-100 dark:bg-slate-200 rounded-full mb-10"
         InputProps={{
           disableUnderline: true,
           endAdornment: (

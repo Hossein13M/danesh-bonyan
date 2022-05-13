@@ -3,8 +3,19 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import GeneralTable from '../components/general-table';
 import { GeneralInput } from '../components/general-input';
+import AppService, { Advertisement } from '../services/appService';
+import CircularLoading from '../components/circularLoading';
+import * as React from 'react';
 
 const Home: NextPage = () => {
+  let isLoading: boolean = true;
+  let adsList: Array<Advertisement> = [];
+  AppService.getJobinjaAdvertisements('node').then((response) => {
+    adsList = response;
+    console.log(adsList);
+    isLoading = false;
+  });
+
   return (
     <div className={styles.container}>
       <Head>
@@ -14,13 +25,9 @@ const Home: NextPage = () => {
       </Head>
 
       <main className="flex flex-col justify-center items-center mt-4 static overflow-hidden">
-        <h1>جستجوی آگهی شغلی</h1>
-        <div className="flex items-center justify-center w-full" style={{ height: '100px' }}>
-          <GeneralInput />
-        </div>
-        <div className="">
-          <GeneralTable />
-        </div>
+        <h1 className="font-black text-2xl mb-6">جستجوی آگهی شغلی</h1>
+        <GeneralInput />
+        {isLoading ? <CircularLoading /> : <GeneralTable />}
       </main>
     </div>
   );
