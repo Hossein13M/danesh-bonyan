@@ -1,7 +1,8 @@
 import { IconButton, InputAdornment, TextField } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
+import { ReactNode } from 'react';
 
-export function GeneralInput(props: any) {
+export function GeneralInput(props: ReactNode) {
   function search(): void {
     console.log('hello world');
   }
