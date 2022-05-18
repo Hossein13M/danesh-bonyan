@@ -3,18 +3,13 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import GeneralTable from '../components/general-table';
 import { GeneralInput } from '../components/general-input';
-import AppService, { Advertisement } from '../services/appService';
 import CircularLoading from '../components/circularLoading';
 import * as React from 'react';
+import { AdvertisementList, JobinjaFetchAdProvider } from '../store/fetchDataContext';
 
 const Home: NextPage = () => {
   let isLoading: boolean = true;
-  let adsList: Array<Advertisement> = [];
-  AppService.getJobinjaAdvertisements('node').then((response) => {
-    adsList = response;
-    console.log(adsList);
-    isLoading = false;
-  });
+  let adsList: Array<AdvertisementList> = [];
 
   return (
     <div className={styles.container}>
