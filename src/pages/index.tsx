@@ -5,11 +5,22 @@ import GeneralTable from '../components/general-table';
 import { GeneralInput } from '../components/general-input';
 import CircularLoading from '../components/circularLoading';
 import * as React from 'react';
-import { AdvertisementList, JobinjaFetchAdProvider } from '../store/fetchDataContext';
+import { useContext } from 'react';
+import FetchJobinjaAdvertisementsContext, { AdvertisementList, JobinjaFetchAdProvider } from '../store/fetchJobinjaAdvertisementsContext';
 
 const Home: NextPage = () => {
   let isLoading: boolean = true;
-  let adsList: Array<AdvertisementList> = [];
+  let adsList: Array<AdvertisementList>;
+
+  const jobinjaCtx: {
+    advertisementList?: Array<AdvertisementList>;
+    fetchJobinjaAdvertisements: (searchKeyword: string) => void;
+    getJobinjaAdsList: () => Array<AdvertisementList>;
+  } = useContext(FetchJobinjaAdvertisementsContext);
+
+  function getJobinjaAdsList(): void {
+    adsList = jobinjaCtx.getJobinjaAdsList();
+  }
 
   return (
     <div className={styles.container}>
@@ -21,8 +32,10 @@ const Home: NextPage = () => {
 
       <main className="flex flex-col justify-center items-center mt-4 static overflow-hidden">
         <h1 className="font-black text-2xl mb-6">جستجوی آگهی شغلی</h1>
-        <GeneralInput />
-        {isLoading ? <CircularLoading /> : <GeneralTable />}
+        <JobinjaFetchAdProvider>
+          <GeneralInput />
+          {isLoading ? <CircularLoading /> : <GeneralTable />}
+        </JobinjaFetchAdProvider>
       </main>
     </div>
   );
