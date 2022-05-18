@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f556f21e-237a-481e-a075-142e5be35c4c" name="Changes" comment="fix(generalInput): remove extra configuration for outlined mode">
+    <list default="true" id="f556f21e-237a-481e-a075-142e5be35c4c" name="Changes" comment="chore(appService)!: remove useless service from the application">
+      <change afterPath="$PROJECT_DIR$/src/store/fetchJobinjaAdvertisementsContext.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/general-input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/general-input.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +58,11 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/home/hossein/Projects/danesh-bonyan",
+    "nodejs_interpreter_path": "/home/hossein/.nvm/versions/node/v16.15.0/bin/node",
     "nodejs_package_manager_path": "yarn",
+    "prettierjs.PrettierConfiguration.Package": "/home/hossein/Projects/danesh-bonyan/node_modules/prettier",
+    "settings.editor.selected.configurable": "settings.nodejs",
+    "ts.external.directory.path": "/home/hossein/Projects/danesh-bonyan/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -76,6 +81,7 @@
         <script value="dev" />
       </scripts>
       <node-interpreter value="$USER_HOME$/.nvm/versions/node/v16.15.0/bin/node" />
+      <package-manager value="npm" />
       <envs />
       <method v="2" />
     </configuration>
@@ -392,7 +398,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652269460811</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="chore(appService)!: remove useless service from the application">
+      <created>1652865307902</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1652865307902</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -411,7 +424,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="chore(global): idea config and apply some changes to git ignore" />
     <MESSAGE value="chore(header): implement header link" />
     <MESSAGE value="chore(assets): add assets for portfolio and profile image" />
     <MESSAGE value="chore(assets): update packages" />
@@ -436,7 +448,8 @@
     <MESSAGE value="feat(generalInput)!: implement general input base component" />
     <MESSAGE value="feat(index): add table and input component in the main page" />
     <MESSAGE value="feat(index): jetbrains idea configuration files" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(index): jetbrains idea configuration files" />
+    <MESSAGE value="chore(appService)!: remove useless service from the application" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore(appService)!: remove useless service from the application" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
