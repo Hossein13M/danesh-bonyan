@@ -3,14 +3,16 @@ import SearchIcon from '@mui/icons-material/Search';
 import { useContext, useState } from 'react';
 import FetchJobinjaAdvertisementsContext, { AdvertisementList } from '../store/fetchJobinjaAdvertisementsContext';
 
-export function GeneralInput() {
+export function GeneralInput({ childToParent }: any) {
   const [searchKeyword, setSearchKeyword] = useState('');
-
-  const jobinjaCtx: { advertisementList?: Array<AdvertisementList>; fetchJobinjaAdvertisements: (searchKeyword: string) => void } =
-    useContext(FetchJobinjaAdvertisementsContext);
+  const [jobinjaAdvertisementList, setJobinjaAdvertisementList] = useState<Array<AdvertisementList>>([]);
+  const jobinjaCtx: { getJobinjaAdvertisements: (keyword: string) => Promise<Array<AdvertisementList>> } = useContext(FetchJobinjaAdvertisementsContext);
 
   function getAds(): void {
-    jobinjaCtx.fetchJobinjaAdvertisements(searchKeyword);
+    jobinjaCtx.getJobinjaAdvertisements(searchKeyword).then((result: Array<AdvertisementList>) => {
+      setJobinjaAdvertisementList(result);
+      childToParent(jobinjaAdvertisementList);
+    });
   }
 
   return (

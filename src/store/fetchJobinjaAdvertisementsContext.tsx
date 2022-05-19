@@ -18,6 +18,9 @@ const FetchJobinjaAdvertisementsContext = createContext({
   getJobinjaAdsList: () => {
     return [{ company: '', link: '', title: '' }];
   },
+  getJobinjaAdvertisements: (searchKeyword: string) => {
+    return new Promise<Array<AdvertisementList>>((resolve) => []);
+  },
 });
 
 export function JobinjaFetchAdProvider(props: FetchJobinjaAdvertisementPropsInterface): ReactElement {
@@ -55,6 +58,7 @@ export function JobinjaFetchAdProvider(props: FetchJobinjaAdvertisementPropsInte
         advertisementList: [],
         fetchJobinjaAdvertisements: (searchKeyword) => fetchJobinjaAdvertisements(searchKeyword),
         getJobinjaAdsList: () => getJobinjaAdsList(),
+        getJobinjaAdvertisements,
       }}
     >
       {props.children}
