@@ -5,23 +5,14 @@ import GeneralTable from '../components/general-table';
 import { GeneralInput } from '../components/general-input';
 import CircularLoading from '../components/circularLoading';
 import * as React from 'react';
-import { useContext } from 'react';
-import FetchJobinjaAdvertisementsContext, { AdvertisementList, JobinjaFetchAdProvider } from '../store/fetchJobinjaAdvertisementsContext';
+import { useState } from 'react';
+import { JobinjaFetchAdProvider } from '../store/fetchJobinjaAdvertisementsContext';
 
 const Home: NextPage = () => {
   let isLoading: boolean = true;
-  let adsList: Array<AdvertisementList>;
+  const [data, setData] = useState('');
 
-  const jobinjaCtx: {
-    advertisementList?: Array<AdvertisementList>;
-    fetchJobinjaAdvertisements: (searchKeyword: string) => void;
-    getJobinjaAdsList: () => Array<AdvertisementList>;
-  } = useContext(FetchJobinjaAdvertisementsContext);
-
-  function getJobinjaAdsList(): void {
-    adsList = jobinjaCtx.getJobinjaAdsList();
-  }
-
+  const childToParent = (childdata: any) => setData(childdata);
   return (
     <div className={styles.container}>
       <Head>
@@ -33,7 +24,7 @@ const Home: NextPage = () => {
       <main className="flex flex-col justify-center items-center mt-4 static overflow-hidden">
         <h1 className="font-black text-2xl mb-6">جستجوی آگهی شغلی</h1>
         <JobinjaFetchAdProvider>
-          <GeneralInput />
+          <GeneralInput childToParent={childToParent} />
           {isLoading ? <CircularLoading /> : <GeneralTable />}
         </JobinjaFetchAdProvider>
       </main>
