@@ -17,8 +17,8 @@ export default function Footer() {
         <div className="">
           <span className="px-2">
             <span className="px-1"> طراحی و توسعه با ❤</span>
-            <a href="https://www.hmousavi.dev/" target="blank">
-              حسین موسوی
+            <a href="https://www.hmousavi.dev/" target="blank" className="text-red-800 dark:text-sky-200">
+              حسین
             </a>
           </span>
         </div>
