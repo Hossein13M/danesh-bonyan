@@ -9,7 +9,7 @@ export default function Layout({ children }: any) {
         <SideBar />
         <Header />
       </header>
-      <main className="flex-grow text-black dark:text-zinc-50 py-4 overflow-y-scroll" style={{ height: 'calc(100vh - 200px)' }}>
+      <main className="main-content-layout flex-grow text-black dark:text-zinc-50 py-4 overflow-y-scroll" style={{ height: 'calc(100vh - 200px)' }}>
         <div className="flex justify-center pt-5">{children}</div>
       </main>
       <footer className="flex-shrink-0">
