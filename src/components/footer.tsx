@@ -31,7 +31,7 @@ export default function Footer() {
             {socialMediaList.map((socialMedia) => {
               return (
                 <a href={socialMedia.link} target="blank" className="px-1 flex" key={socialMedia.name}>
-                  <Image src={socialMedia.imageSrc} alt={socialMedia.name} width={25} height={25} className="" />
+                  <Image src={socialMedia.imageSrc} alt={socialMedia.name} width={25} height={25} className="gray-filter hover:no-filter" />
                 </a>
               );
             })}
