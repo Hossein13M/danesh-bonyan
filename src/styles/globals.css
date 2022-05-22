@@ -6,6 +6,12 @@
   .whiten-filter {
     filter: brightness(0) invert(1);
   }
+  .gray-filter {
+    filter: grayscale(70%);
+  }
+  .no-filter {
+    filter: none;
+  }
 }
 
 html,
