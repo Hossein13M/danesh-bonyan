@@ -1,5 +1,58 @@
 import { AboutCardProps } from './About.model';
 
+export const AboutArticleInfo: AboutCardProps = {
+  headerTitle: 'راهنمای گرفتن امریه‌ی دانش‌بنیان',
+  cardMedia: {
+    imgLink: '/assets/danesh-bonyan.jpeg',
+    imgAltText: 'Virgool Danesh Bonyan Article',
+  },
+  description: `
+  <div>
+   قطعا یکی از پر دغدغه‌ترین کارایی که هر مرد ایرانی باید بهش رسیدگی کنه، گذروندن دوره‌ی سربازی هستش. قطعا نوشتن این نوشته نه تنها به معنی تایید این دوره‌ی اجباری نیست، بلکه هدف کمک تو راستای آسون‌تر و بهتر گذروندن این دو سال اجباری هستش. لطفا مقاله رو تا آخر بخونین و اگه سوالی داشتید، حتما ازم بپرسید
+  </div>
+  `,
+  button: {
+    text: 'خوندن کامل این نوشته',
+    link: 'https://virgool.io/@Hossein13M/amrieh-danesh-bonyan-tumuf0uiwzbg',
+    icon: 'articleIcon',
+  },
+};
+
+export const AboutProjectInfo: AboutCardProps = {
+  headerTitle: 'درباره‌ی پروژه',
+  cardMedia: {
+    imgLink: '/assets/blue-logo.png',
+    imgAltText: 'Logo Picture',
+  },
+  description: `
+  <div>
+            از اون‌جایی که تو جابینجا، بعضی از شرکت‌های دانش‌بنیان، این موضوع رو نمینویسن که دانش‌بنیان هستن، برای سادگی کار کسایی که میخوان امریه‌ی دانش‌بنیان
+            بگیرن، من به این فکر افتادم که یه جایی باشه که بتونه آگهی‌های شرکت‌های دانش‌بنیان جابینجا رو فیلتر بکنه
+            که ثمره‌ش این پروژه شد!
+          </p>
+          <p>
+            برای حمایت، میتونین به
+             <strong>گیت‌هاب</strong>
+             پروژه
+            ⭐
+            بدید.
+          </p>
+
+          <p>
+            تو این راه دوست خوبم،
+            <a href="https://www.linkedin.com/in/pejman-hadavi-b68b99186" target="blank">
+              <b className="border-b-2 border-dashed dark:border-blue-600 pb-1 border-red-700 px-0.5">پژمان</b>
+            </a>
+            <span> بهم خیلی کمک کرد.</span>
+  </div>
+  `,
+  button: {
+    text: 'گیت‌هاب پروژه',
+    link: 'https://github.com/hossein13m/danesh-bonyan',
+    icon: 'github',
+  },
+};
+
 export const AboutMeInfo: AboutCardProps = {
   headerTitle: 'درباره‌ی من',
   cardMedia: {
@@ -22,38 +75,5 @@ export const AboutMeInfo: AboutCardProps = {
     text: 'وبسایت شخصی من',
     link: 'https://www.hmousavi.dev',
     icon: 'person',
-  },
-};
-
-export const AboutProjectInfo: AboutCardProps = {
-  headerTitle: 'درباره‌ی پروژه',
-  cardMedia: {
-    imgLink: '/assets/green-logo.png',
-    imgAltText: 'Logo Picture',
-  },
-  description: `
-  <div>
-            از اون‌جایی که تو جابینجا، بعضی از شرکت‌های دانش‌بنیان، این موضوع رو ذکر نمیکنن که دانش‌بنیان هستن و برای راحتی کسایی که میخوان امریه‌ی دانش‌بنیان
-            بگیرن، من به این فکر افتادم که یه جایی باشه که بتونه آگهی‌های جابینجا رو فیلتر بکنه و فقط اون‌هایی رو نشون بده که مربوط میشن به شرکت‌های دانش‌بنیان
-            که ثمره‌ش این پروژه شد!
-          </p>
-          <p>
-            برای حمایت، میتونین به گیت‌هاب پروژه
-            <StarIcon className='text-yellow-500'/>
-            بدید.
-          </p>
-
-          <p>
-            تو این راه دوست خوبم،
-            <a href="https://www.linkedin.com/in/pejman-hadavi-b68b99186" target="blank">
-              <b className="border-b-2 border-dashed dark:border-blue-600 pb-1 border-red-700 px-0.5">پژمان</b>
-            </a>
-            <span> بهم خیلی کمک کرد.</span>
-  </div>
-  `,
-  button: {
-    text: 'گیت‌هاب پروژه',
-    link: 'https://github.com/hossein13m/danesh-bonyan',
-    icon: 'github',
   },
 };

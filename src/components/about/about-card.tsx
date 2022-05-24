@@ -25,17 +25,17 @@ export default function AboutCard(props: AboutCardProps) {
         <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Two+Tone" rel="stylesheet" />
       </Head>
       <Card
-        sx={{ maxWidth: 500, minHeight: 750 }}
+        sx={{ width: 420, minHeight: 680 }}
         dir="rtl"
-        className="flex flex-col dark:bg-custom-slate-100 bg-zinc-100 dark:text-white dark:border-custom-slate-200 border-red-600 border-2"
+        className="flex flex-col dark:bg-custom-slate-100 bg-zinc-100 dark:text-white dark:border-custom-slate-200 border-sky-500 border-2"
       >
         <CardMedia
-          sx={{ minWidth: 350, minHeight: 350 }}
+          sx={{ width: 420, minHeight: 400, maxHeight: 400 }}
           component="img"
-          height="140"
+          height="120"
           image={props.cardMedia.imgLink}
           alt={props.cardMedia.imgAltText}
-          className="border-red-700"
+          className="border-sky-500"
         />
         <CardContent className="flex flex-col items-start flex-grow">
           <Typography gutterBottom variant="h5" component="div">
@@ -48,7 +48,7 @@ export default function AboutCard(props: AboutCardProps) {
         <CardActions className="flex justify-center flex-shrink-0 mb-4">
           <Button
             variant="outlined"
-            className="dark:bg-custom-slate-200 dark:text-zinc-50 dark:border-blue-600 border-red-700 text-red-700 flex items-center"
+            className="dark:bg-custom-slate-200 dark:text-zinc-50 dark:border-blue-600 border-sky-500 text-sky-500 flex items-center"
             href={props.button.link}
             target="blank"
           >
