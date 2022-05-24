@@ -25,14 +25,14 @@ export default function AboutCard(props: AboutCardProps) {
         <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Two+Tone" rel="stylesheet" />
       </Head>
       <Card
-        sx={{ maxWidth: 500, minHeight: 750 }}
+        sx={{ width: 420, minHeight: 680 }}
         dir="rtl"
         className="flex flex-col dark:bg-custom-slate-100 bg-zinc-100 dark:text-white dark:border-custom-slate-200 border-red-600 border-2"
       >
         <CardMedia
-          sx={{ minWidth: 350, minHeight: 350 }}
+          sx={{ width: 420, minHeight: 400, maxHeight: 400 }}
           component="img"
-          height="140"
+          height="120"
           image={props.cardMedia.imgLink}
           alt={props.cardMedia.imgAltText}
           className="border-red-700"
