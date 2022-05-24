@@ -31,8 +31,10 @@ export const AboutProjectInfo: AboutCardProps = {
             که ثمره‌ش این پروژه شد!
           </p>
           <p>
-            برای حمایت، میتونین به گیت‌هاب پروژه
-            <StarIcon className='text-yellow-500'/>
+            برای حمایت، میتونین به
+             <strong>گیت‌هاب</strong>
+             پروژه
+            ⭐
             بدید.
           </p>
 
