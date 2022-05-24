@@ -21,7 +21,7 @@ export const AboutArticleInfo: AboutCardProps = {
 export const AboutProjectInfo: AboutCardProps = {
   headerTitle: 'درباره‌ی پروژه',
   cardMedia: {
-    imgLink: '/assets/green-logo.png',
+    imgLink: '/assets/blue-logo.png',
     imgAltText: 'Logo Picture',
   },
   description: `
