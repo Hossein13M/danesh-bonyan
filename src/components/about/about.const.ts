@@ -1,27 +1,20 @@
 import { AboutCardProps } from './About.model';
 
-export const AboutMeInfo: AboutCardProps = {
-  headerTitle: 'درباره‌ی من',
+export const AboutArticleInfo: AboutCardProps = {
+  headerTitle: 'راهنمای گرفتن امریه‌ی دانش‌بنیان',
   cardMedia: {
-    imgLink: '/assets/hosseinMousavi.webp',
-    imgAltText: 'Hossein Mousavi Profile Picture',
+    imgLink: '/assets/danesh-bonyan.jpeg',
+    imgAltText: 'Virgool Danesh Bonyan Article',
   },
   description: `
   <div>
-   <b>سلام دوست من؛</b> من <b>حسین موسوی</b>، توسعه‌دهنده‌ی نرم‌افزار هستم. من عموما با <b>JavaScript</b> و <b>TypeScript</b> کار میکنم. تلاشم رو میکنم
-          که تا جایی که میتونم آموزش بدم و برای همین، توی
-          <b className="border-b-2 border-dashed dark:border-blue-600 border-red-700 px-0.5 pb-1">
-            <a href="https://medium.com/@hossein13m" target="blank">
-              Medium
-            </a>
-          </b>
-          مقاله مینویسم.
+   قطعا یکی از پر دغدغه‌ترین کارایی که هر مرد ایرانی باید بهش رسیدگی کنه، گذروندن دوره‌ی سربازی هستش. قطعا نوشتن این نوشته نه تنها به معنی تایید این دوره‌ی اجباری نیست، بلکه هدف کمک تو راستای آسون‌تر و بهتر گذروندن این دو سال اجباری هستش. لطفا مقاله رو تا آخر بخونین و اگه سوالی داشتید، حتما ازم بپرسید
   </div>
   `,
   button: {
-    text: 'وبسایت شخصی من',
-    link: 'https://www.hmousavi.dev',
-    icon: 'person',
+    text: 'خوندن کامل این نوشته',
+    link: 'https://virgool.io/@Hossein13M/amrieh-danesh-bonyan-tumuf0uiwzbg',
+    icon: 'articleIcon',
   },
 };
 
@@ -55,5 +48,30 @@ export const AboutProjectInfo: AboutCardProps = {
     text: 'گیت‌هاب پروژه',
     link: 'https://github.com/hossein13m/danesh-bonyan',
     icon: 'github',
+  },
+};
+
+export const AboutMeInfo: AboutCardProps = {
+  headerTitle: 'درباره‌ی من',
+  cardMedia: {
+    imgLink: '/assets/hosseinMousavi.webp',
+    imgAltText: 'Hossein Mousavi Profile Picture',
+  },
+  description: `
+  <div>
+   <b>سلام دوست من؛</b> من <b>حسین موسوی</b>، توسعه‌دهنده‌ی نرم‌افزار هستم. من عموما با <b>JavaScript</b> و <b>TypeScript</b> کار میکنم. تلاشم رو میکنم
+          که تا جایی که میتونم آموزش بدم و برای همین، توی
+          <b className="border-b-2 border-dashed dark:border-blue-600 border-red-700 px-0.5 pb-1">
+            <a href="https://medium.com/@hossein13m" target="blank">
+              Medium
+            </a>
+          </b>
+          مقاله مینویسم.
+  </div>
+  `,
+  button: {
+    text: 'وبسایت شخصی من',
+    link: 'https://www.hmousavi.dev',
+    icon: 'person',
   },
 };
