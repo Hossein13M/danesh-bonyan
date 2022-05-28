@@ -61,14 +61,10 @@ export const AboutMeInfo: AboutCardProps = {
   },
   description: `
   <div>
-   <b>سلام دوست من؛</b> من <b>حسین موسوی</b>، توسعه‌دهنده‌ی نرم‌افزار هستم. من عموما با <b>JavaScript</b> و <b>TypeScript</b> کار میکنم. تلاشم رو میکنم
-          که تا جایی که میتونم آموزش بدم و برای همین، توی
-          <b className="border-b-2 border-dashed dark:border-blue-600 border-red-700 px-0.5 pb-1">
-            <a href="https://medium.com/@hossein13m" target="blank">
-              Medium
-            </a>
-          </b>
-          مقاله مینویسم.
+   <b>سلام دوست من؛</b> من <b>حسین موسوی</b>، توسعه‌دهنده‌ی نرم‌افزار هستم. من عموما با <b>JavaScript</b> و <b>TypeScript</b>.
+          با داستان‌های سربازی برای کامل آشنا هستم و به همین خاطر، همه‌ی تلاشم رو میکنم که بیشترین کمکی که از دستم برمیاد رو انجام بدم.
+            <br>
+          اگه پرسشی از من دارید، میتونین تو پورتفولیوی شخصی من، روش‌های ارتباطی با من رو پیدا کنین.
   </div>
   `,
   button: {
