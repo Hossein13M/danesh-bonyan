@@ -25,7 +25,7 @@ export default function AboutCard(props: AboutCardProps) {
         <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Two+Tone" rel="stylesheet" />
       </Head>
       <Card
-        sx={{ width: 420, minHeight: 680 }}
+        sx={{ width: 420, minHeight: 690 }}
         dir="rtl"
         className="flex flex-col dark:bg-custom-slate-100 bg-zinc-100 dark:text-white dark:border-custom-slate-200 border-sky-500 border-2"
       >
