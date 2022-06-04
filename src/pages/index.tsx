@@ -10,7 +10,7 @@ import { JobinjaFetchAdProvider } from '../store/fetchJobinjaAdvertisementsConte
 
 const Home: NextPage = () => {
   let isLoading: boolean = true;
-  const [data, setData] = useState('');
+  const [data, setData] = useState([]);
 
   const childToParent = (childdata: any) => setData(childdata);
   return (
@@ -25,7 +25,7 @@ const Home: NextPage = () => {
         <h1 className="font-black text-2xl mb-6">جستجوی آگهی شغلی</h1>
         <JobinjaFetchAdProvider>
           <GeneralInput childToParent={childToParent} />
-          {isLoading ? <CircularLoading /> : <GeneralTable />}
+          {isLoading ? <CircularLoading /> : <GeneralTable {...data} />}
         </JobinjaFetchAdProvider>
       </main>
     </div>
