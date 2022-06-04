@@ -6,13 +6,13 @@ import { GeneralInput } from '../components/general-input';
 import CircularLoading from '../components/circularLoading';
 import * as React from 'react';
 import { useState } from 'react';
-import { JobinjaFetchAdProvider } from '../store/fetchJobinjaAdvertisementsContext';
+import { AdvertisementList, JobinjaFetchAdProvider } from '../store/fetchJobinjaAdvertisementsContext';
 
 const Home: NextPage = () => {
   let isLoading: boolean = true;
-  const [data, setData] = useState([]);
+  const [data, setData] = useState<Array<AdvertisementList>>([]);
+  const childToParent = (childData: Array<AdvertisementList>) => setData(childData);
 
-  const childToParent = (childdata: any) => setData(childdata);
   return (
     <div className={styles.container}>
       <Head>
