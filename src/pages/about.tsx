@@ -1,6 +1,6 @@
 import React from 'react';
-import AboutCard from '../components/about/about-card';
-import { AboutArticleInfo, AboutMeInfo, AboutProjectInfo } from '../components/about/about.const';
+import AboutCard from '../components/about-card';
+import { AboutArticleInfo, AboutMeInfo, AboutProjectInfo } from '../const/about.const';
 
 export default function About() {
   return (
