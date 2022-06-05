@@ -2,17 +2,33 @@ import { IconButton, InputAdornment, TextField } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import { useContext, useState } from 'react';
 import FetchJobinjaAdvertisementsContext, { AdvertisementList } from '../store/fetchJobinjaAdvertisementsContext';
+import CircularLoading from './circularLoading';
+import stringSimilarity from 'string-similarity';
+import { daneshBonyanCompaniesList } from '../const/daneshBonyanCompaniesList';
 
 export function GeneralInput({ childToParent }: any) {
-  const [searchKeyword, setSearchKeyword] = useState('');
-  const [jobinjaAdvertisementList, setJobinjaAdvertisementList] = useState<Array<AdvertisementList>>([]);
+  const [searchKeyword, setSearchKeyword] = useState<string>('');
+  const [loading, setLoading] = useState<boolean>(false);
   const jobinjaCtx: { getJobinjaAdvertisements: (keyword: string) => Promise<Array<AdvertisementList>> } = useContext(FetchJobinjaAdvertisementsContext);
 
   function getAds(): void {
-    jobinjaCtx.getJobinjaAdvertisements(searchKeyword).then((result: Array<AdvertisementList>) => {
-      setJobinjaAdvertisementList(result);
-      childToParent(jobinjaAdvertisementList);
+    setLoading(true);
+    jobinjaCtx.getJobinjaAdvertisements(searchKeyword).then((result: Array<AdvertisementList>) => childToParent(checkForSimilarities(result)));
+  }
+
+  function checkForSimilarities(advertisementList: Array<AdvertisementList>): Array<AdvertisementList> {
+    const result: Array<AdvertisementList> = [];
+    daneshBonyanCompaniesList.map((company) => {
+      advertisementList.map((ad) => {
+        const similarity = stringSimilarity.compareTwoStrings(company.coName, ad.company);
+        if (similarity > 0.5) result.push(ad);
+      });
     });
+
+    const uniqueResult = Array.from(new Set(result.map((a) => a.title))).map((title) => result.find((item) => item.title === title));
+
+    setLoading(false);
+    return (uniqueResult as Array<AdvertisementList>) ?? [];
   }
 
   return (
@@ -32,6 +48,7 @@ export function GeneralInput({ childToParent }: any) {
           ),
         }}
       />
+      <div className="mb-4 pb-4">{loading && <CircularLoading />}</div>
     </>
   );
 }

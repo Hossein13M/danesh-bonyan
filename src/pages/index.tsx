@@ -3,13 +3,12 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import GeneralTable from '../components/general-table';
 import { GeneralInput } from '../components/general-input';
-import CircularLoading from '../components/circularLoading';
 import * as React from 'react';
 import { useState } from 'react';
 import { AdvertisementList, JobinjaFetchAdProvider } from '../store/fetchJobinjaAdvertisementsContext';
+import EmptyState from '../components/emptyState';
 
 const Home: NextPage = () => {
-  let isLoading: boolean = true;
   const [data, setData] = useState<Array<AdvertisementList>>([]);
   const childToParent = (childData: Array<AdvertisementList>) => setData(childData);
 
@@ -25,8 +24,8 @@ const Home: NextPage = () => {
         <h1 className="font-black text-2xl mb-6">جستجوی آگهی شغلی</h1>
         <JobinjaFetchAdProvider>
           <GeneralInput childToParent={childToParent} />
-          {isLoading ? <CircularLoading /> : <GeneralTable {...data} />}
         </JobinjaFetchAdProvider>
+        {data.length ? <GeneralTable dataParentToChild={data} /> : <EmptyState />}
       </main>
     </div>
   );
