@@ -2,13 +2,17 @@ import { IconButton, InputAdornment, TextField } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import { useContext, useState } from 'react';
 import FetchJobinjaAdvertisementsContext, { AdvertisementList } from '../store/fetchJobinjaAdvertisementsContext';
+import CircularLoading from './circularLoading';
 
 export function GeneralInput({ childToParent }: any) {
   const [searchKeyword, setSearchKeyword] = useState('');
+  const [loading, setLoading] = useState<boolean>(false);
   const jobinjaCtx: { getJobinjaAdvertisements: (keyword: string) => Promise<Array<AdvertisementList>> } = useContext(FetchJobinjaAdvertisementsContext);
 
   function getAds(): void {
+    setLoading(true);
     jobinjaCtx.getJobinjaAdvertisements(searchKeyword).then((result: Array<AdvertisementList>) => {
+      setLoading(false);
       let resultArray: Array<AdvertisementList> = [];
       result.map((item) => resultArray.push(item));
       childToParent(resultArray);
@@ -32,6 +36,7 @@ export function GeneralInput({ childToParent }: any) {
           ),
         }}
       />
+      <div className="mb-4 pb-4">{loading && <CircularLoading />}</div>
     </>
   );
 }
