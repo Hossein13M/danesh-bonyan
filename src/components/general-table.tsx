@@ -39,7 +39,7 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 export default function GeneralTable({ dataParentToChild }: any) {
   return (
     <>
-      <TableContainer component={Paper}>
+      <TableContainer component={Paper} className="mb-6">
         <Table sx={{ minWidth: 700 }} stickyHeader aria-label="sticky table" className="table-fixed">
           <TableHead>
             <TableRow>
