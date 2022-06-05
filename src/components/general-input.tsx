@@ -5,7 +5,7 @@ import FetchJobinjaAdvertisementsContext, { AdvertisementList } from '../store/f
 import CircularLoading from './circularLoading';
 
 export function GeneralInput({ childToParent }: any) {
-  const [searchKeyword, setSearchKeyword] = useState('');
+  const [searchKeyword, setSearchKeyword] = useState<string>('');
   const [loading, setLoading] = useState<boolean>(false);
   const jobinjaCtx: { getJobinjaAdvertisements: (keyword: string) => Promise<Array<AdvertisementList>> } = useContext(FetchJobinjaAdvertisementsContext);
 
