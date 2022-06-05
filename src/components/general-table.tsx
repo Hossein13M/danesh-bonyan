@@ -49,8 +49,8 @@ export default function GeneralTable({ dataParentToChild }: any) {
             </TableRow>
           </TableHead>
           <TableBody>
-            {dataParentToChild.map((item: TableInfo) => (
-              <StyledTableRow key={item.title}>
+            {dataParentToChild.map((item: TableInfo, index: number) => (
+              <StyledTableRow key={index}>
                 <StyledTableCell align="right">
                   <a href={item.link} target="blank">
                     <Button variant="contained" endIcon={<OpenInNewIcon />}>
@@ -58,8 +58,10 @@ export default function GeneralTable({ dataParentToChild }: any) {
                     </Button>
                   </a>
                 </StyledTableCell>
-                <StyledTableCell align="right">{item.company}</StyledTableCell>
-                <StyledTableCell align="right" component="th" scope="row">
+                <StyledTableCell align="right" dir="rtl">
+                  {item.company}
+                </StyledTableCell>
+                <StyledTableCell align="right" dir="rtl" component="th" scope="row">
                   {item.title}
                 </StyledTableCell>
               </StyledTableRow>
