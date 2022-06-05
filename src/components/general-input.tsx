@@ -3,6 +3,8 @@ import SearchIcon from '@mui/icons-material/Search';
 import { useContext, useState } from 'react';
 import FetchJobinjaAdvertisementsContext, { AdvertisementList } from '../store/fetchJobinjaAdvertisementsContext';
 import CircularLoading from './circularLoading';
+import stringSimilarity from 'string-similarity';
+import { daneshBonyanCompaniesList } from '../const/daneshBonyanCompaniesList';
 
 export function GeneralInput({ childToParent }: any) {
   const [searchKeyword, setSearchKeyword] = useState<string>('');
@@ -11,12 +13,22 @@ export function GeneralInput({ childToParent }: any) {
 
   function getAds(): void {
     setLoading(true);
-    jobinjaCtx.getJobinjaAdvertisements(searchKeyword).then((result: Array<AdvertisementList>) => {
-      setLoading(false);
-      let resultArray: Array<AdvertisementList> = [];
-      result.map((item) => resultArray.push(item));
-      childToParent(resultArray);
+    jobinjaCtx.getJobinjaAdvertisements(searchKeyword).then((result: Array<AdvertisementList>) => childToParent(checkForSimilarities(result)));
+  }
+
+  function checkForSimilarities(advertisementList: Array<AdvertisementList>): Array<AdvertisementList> {
+    const result: Array<AdvertisementList> = [];
+    daneshBonyanCompaniesList.map((company) => {
+      advertisementList.map((ad) => {
+        const similarity = stringSimilarity.compareTwoStrings(company.coName, ad.company);
+        if (similarity > 0.5) result.push(ad);
+      });
     });
+
+    const uniqueResult = Array.from(new Set(result.map((a) => a.title))).map((title) => result.find((item) => item.title === title));
+
+    setLoading(false);
+    return (uniqueResult as Array<AdvertisementList>) ?? [];
   }
 
   return (
