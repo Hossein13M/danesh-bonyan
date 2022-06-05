@@ -6,6 +6,8 @@ export default function Footer() {
     { imageSrc: '/assets/twitter.png', name: 'Twitter', link: 'https://twitter.com/Hossein13M' },
     { imageSrc: '/assets/linkedin.png', name: 'LinkedIn', link: 'https://www.linkedin.com/in/hossein13mousavi' },
     { imageSrc: '/assets/virgool.png', name: 'Virgool', link: 'https://virgool.io/@Hossein13M' },
+    { imageSrc: '/assets/github.png', name: 'GitHub', link: 'https://github.com/hossein13m' },
+    { imageSrc: '/assets/whatsapp.png', name: 'WhatsApp', link: 'https://api.whatsapp.com/send?phone=989396197609' },
   ];
 
   return (
@@ -26,7 +28,6 @@ export default function Footer() {
         <hr className="text-white block sm:hidden w-4/5 my-4 sm:my-0" />
 
         <div className="flex items-center ml-2 ">
-          <span className="px-2">پیام به من</span>
           <div className="flex items-center">
             {socialMediaList.map((socialMedia) => {
               return (
