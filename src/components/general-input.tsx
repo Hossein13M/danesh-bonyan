@@ -4,7 +4,7 @@ import { useContext, useState } from 'react';
 import FetchJobinjaAdvertisementsContext, { AdvertisementList } from '../store/fetchJobinjaAdvertisementsContext';
 import CircularLoading from './circularLoading';
 import stringSimilarity from 'string-similarity';
-import { daneshBonyanCompaniesList } from '../const/daneshBonyanCompaniesList';
+import companiesList from '../const/companies.json';
 
 export function GeneralInput({ childToParent }: any) {
   const [searchKeyword, setSearchKeyword] = useState<string>('');
@@ -18,9 +18,9 @@ export function GeneralInput({ childToParent }: any) {
 
   function checkForSimilarities(advertisementList: Array<AdvertisementList>): Array<AdvertisementList> {
     const result: Array<AdvertisementList> = [];
-    daneshBonyanCompaniesList.map((company) => {
+    companiesList.map((company: string) => {
       advertisementList.map((ad) => {
-        const similarity = stringSimilarity.compareTwoStrings(company.coName, ad.company);
+        const similarity = stringSimilarity.compareTwoStrings(company, ad.company);
         if (similarity > 0.5) result.push(ad);
       });
     });
