@@ -10,8 +10,8 @@ import EmptyState from '../components/emptyState';
 
 const Home: NextPage = () => {
   const [data, setData] = useState<Array<AdvertisementList>>([]);
-
   const childToParent = (childData: Array<AdvertisementList>) => setData(childData);
+
   return (
     <div className={styles.container}>
       <Head>
