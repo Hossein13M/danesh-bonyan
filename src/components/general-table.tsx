@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { useEffect, useState } from 'react';
 import { styled } from '@mui/material/styles';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -37,33 +36,31 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
   },
 }));
 
-export default function GeneralTable(props: Array<TableInfo>) {
-  const [tableData, setTableData] = useState<Array<TableInfo>>([]);
-
+export default function GeneralTable({ dataParentToChild }: any) {
   return (
     <>
       <TableContainer component={Paper}>
         <Table sx={{ minWidth: 700 }} stickyHeader aria-label="sticky table" className="table-fixed">
           <TableHead>
             <TableRow>
-              <StyledTableCell>نام شرکت</StyledTableCell>
-              <StyledTableCell align="right">نام شغلی</StyledTableCell>
               <StyledTableCell align="right">لینک آگهی</StyledTableCell>
+              <StyledTableCell align="right">نام شرکت</StyledTableCell>
+              <StyledTableCell align="right">نام شغل</StyledTableCell>
             </TableRow>
           </TableHead>
           <TableBody>
-            {tableData.map((item: TableInfo) => (
+            {dataParentToChild.map((item: TableInfo) => (
               <StyledTableRow key={item.title}>
-                <StyledTableCell component="th" scope="row">
-                  {item.title}
-                </StyledTableCell>
-                <StyledTableCell align="right">{item.company}</StyledTableCell>
                 <StyledTableCell align="right">
                   <a href={item.link} target="blank">
                     <Button variant="contained" endIcon={<OpenInNewIcon />}>
                       دیدن این آگهی در جابینجا
                     </Button>
                   </a>
+                </StyledTableCell>
+                <StyledTableCell align="right">{item.company}</StyledTableCell>
+                <StyledTableCell align="right" component="th" scope="row">
+                  {item.title}
                 </StyledTableCell>
               </StyledTableRow>
             ))}
