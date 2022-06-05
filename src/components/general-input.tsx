@@ -10,8 +10,10 @@ export function GeneralInput({ childToParent }: any) {
 
   function getAds(): void {
     jobinjaCtx.getJobinjaAdvertisements(searchKeyword).then((result: Array<AdvertisementList>) => {
+      let resultArray: Array<AdvertisementList> = [];
+      result.map((item) => resultArray.push(item));
       setJobinjaAdvertisementList(result);
-      childToParent(jobinjaAdvertisementList);
+      childToParent(resultArray);
     });
   }
 
