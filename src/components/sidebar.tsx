@@ -19,14 +19,16 @@ export default function Sidebar(props: any) {
   return (
     <Menu
       {...props}
-      className="flex flex-col min-h-screen items-stretch bg-slate-500 dark:bg-stone-800"
+      className="flex flex-col min-h-screen items-stretch bg-slate-100 dark:bg-slate-900"
       customBurgerIcon={<Image src="/assets/menu.png" alt="hamburger menu image" width={30} height={30} />}
     >
       <Button
-        className="mb-4 flex w-56 bg-sky-700 text-yellow-500 dark:text-sky-700 font-black dark:bg-yellow-500"
+        className="mb-4 flex justify-end pr-14 w-56 bg-sky-500 text-white font-black dark:bg-custom-slate-100"
         variant="outlined"
-        startIcon={<InfoOutlinedIcon />}
+        endIcon={<InfoOutlinedIcon />}
         size="large"
+        disableRipple
+        disableFocusRipple
         onClick={() => router.push('/about')}
       >
         درباره
@@ -34,9 +36,9 @@ export default function Sidebar(props: any) {
 
       <a href="https://github.com/hossein13m/danesh-bonyan" target="blank">
         <Button
-          className="mb-4 flex w-56 bg-sky-700 text-yellow-500 dark:text-sky-700 font-black dark:bg-yellow-500"
+          className="mb-4 flex justify-end pr-14 w-56 bg-sky-500 text-white font-black dark:bg-custom-slate-100"
           variant="outlined"
-          startIcon={<GitHubIcon />}
+          endIcon={<GitHubIcon />}
           disableRipple
           disableFocusRipple
           size="large"
@@ -46,9 +48,12 @@ export default function Sidebar(props: any) {
       </a>
 
       <Button
-        className="mb-4 flex w-56 bg-sky-700 text-yellow-500 dark:text-sky-700 font-black dark:bg-yellow-500"
+        className="mb-4 flex justify-end pr-14 w-56 bg-sky-500 text-white font-black dark:bg-custom-slate-100"
         variant="outlined"
-        startIcon={<Brightness4Icon />}
+        size="large"
+        disableRipple
+        disableFocusRipple
+        endIcon={<Brightness4Icon />}
         onClick={toggleThemeHandler}
       >
         تغییر تم
