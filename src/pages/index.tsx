@@ -42,7 +42,10 @@ const Home: NextPage = () => {
           <meta property="og:type" content="website" />
           <meta property="og:site_name" content="فهرست شرکت‌های دانش‌بنیان" />
           <meta property="og:url" content="https://danesh-bonyan.hmousavi.dev" />
-          <meta property="og:image" content="https://www.hmousavi.dev/assets/images/preview.png" />
+          <meta
+            property="og:image"
+            content="https://danesh-bonyan.hmousavi.dev/_ipx/w_828,q_75/%2Fassets%2Fpreview.png?url=%2Fassets%2Fpreview.png&w=828&q=75"
+          />
           <meta property="og:image:alt" content="آگهی‌های شغلی دانش‌بنیان" />
           <meta name="published_date" content="2022-06-16T11:00:00.000Z" />
           <meta name="author" content="Hossein Mousavi | حسین موسوی" />
@@ -50,7 +53,10 @@ const Home: NextPage = () => {
 
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="موقعیت‌های شغلی شرکت‌های دانش‌بنیان در جابینجا" />
-          <meta name="twitter:image" content="https://www.hmousavi.dev/assets/images/preview.png" />
+          <meta
+            name="twitter:image"
+            content="https://danesh-bonyan.hmousavi.dev/_ipx/w_828,q_75/%2Fassets%2Fpreview.png?url=%2Fassets%2Fpreview.png&w=828&q=75"
+          />
           <meta name="twitter:image:alt" content="موقعیت‌های شغلی شرکت‌های دانش‌بنیان در جابینجا" />
           <meta name="twitter:site" content="@hossein13m" />
           <meta name="twitter:creator" content="@hossein13m" />
