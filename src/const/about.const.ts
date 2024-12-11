@@ -81,7 +81,7 @@ export const AboutMeInfo: AboutCardProps = {
   `,
   button: {
     text: 'وبسایت شخصی من',
-    link: 'https://www.hmousavi.dev',
+    link: 'https://www.hossein.dev',
     icon: 'person',
   },
 };
